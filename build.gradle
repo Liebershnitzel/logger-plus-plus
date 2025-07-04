@@ -19,6 +19,7 @@ dependencies {
     implementation 'com.github.CoreyD97:Burp-Montoya-Utilities:234d21d'
 //    implementation 'org.elasticsearch.client:elasticsearch-rest-high-level-client:7.17.9'
     implementation 'co.elastic.clients:elasticsearch-java:8.6.2'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
     implementation 'org.apache.httpcomponents:httpclient:4.5.13'
     implementation 'org.apache.commons:commons-text:1.10.0'
     implementation 'org.apache.logging.log4j:log4j-core:2.19.0'

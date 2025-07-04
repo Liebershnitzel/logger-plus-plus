@@ -120,6 +120,16 @@ public class LoggerPreferenceFactory extends PreferenceFactory {
         }.getType(), new ArrayList<LogEntry>());
         prefs.registerSetting(PREF_PREVIOUS_ELASTIC_FIELDS, new TypeToken<List<LogEntryField>>() {
         }.getType(), new ArrayList<LogEntry>());
+        prefs.registerSetting(PREF_SPLUNK_URL, String.class, "http://127.0.0.1:8088/services/collector/event");
+        prefs.registerSetting(PREF_SPLUNK_HEC_TOKEN, String.class, "");
+        prefs.registerSetting(PREF_SPLUNK_INDEX, String.class, "main");
+        prefs.registerSetting(PREF_SPLUNK_DELAY, Integer.class, 120);
+        prefs.registerSetting(PREF_SPLUNK_FILTER, String.class, "", Preferences.Visibility.GLOBAL);
+        prefs.registerSetting(PREF_SPLUNK_FILTER_PROJECT_PREVIOUS, String.class, null, Preferences.Visibility.PROJECT);
+        prefs.registerSetting(PREF_SPLUNK_AUTOSTART_GLOBAL, Boolean.class, false);
+        prefs.registerSetting(PREF_SPLUNK_AUTOSTART_PROJECT, Boolean.class, false, Preferences.Visibility.PROJECT);
+        prefs.registerSetting(PREF_PREVIOUS_SPLUNK_FIELDS, new TypeToken<List<LogEntryField>>() {
+        }.getType(), new ArrayList<LogEntry>());
         prefs.registerSetting(PREF_COLUMNS_VERSION, Integer.class, null, Preferences.Visibility.GLOBAL);
         prefs.registerSetting(PREF_SAVED_FIELD_SELECTIONS, new TypeToken<LinkedHashMap<String, LinkedHashMap<LogEntryField, Boolean>>>() {
         }.getType(), new LinkedHashMap<>(), Preferences.Visibility.GLOBAL);

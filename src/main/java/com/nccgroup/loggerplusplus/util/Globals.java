@@ -77,6 +77,16 @@ public class Globals {
     public static final String PREF_COLUMNS_VERSION = "columnsVersion";
     public static final String PREF_MAX_RESP_SIZE = "maxRespBodySize";
     public static final String PREF_TABLE_PILL_STYLE = "tagsStyle";
+    //Splunk Exporter
+    public static final String PREF_SPLUNK_URL = "splunkUrl";
+    public static final String PREF_SPLUNK_HEC_TOKEN = "splunkHecToken";
+    public static final String PREF_SPLUNK_INDEX = "splunkIndex";
+    public static final String PREF_SPLUNK_DELAY = "splunkDelay";
+    public static final String PREF_SPLUNK_FILTER = "splunkFilter";
+    public static final String PREF_SPLUNK_FILTER_PROJECT_PREVIOUS = "splunkProjectFilter";
+    public static final String PREF_SPLUNK_AUTOSTART_GLOBAL = "splunkAutostart";
+    public static final String PREF_SPLUNK_AUTOSTART_PROJECT = "splunkAutostartProject";
+    public static final String PREF_PREVIOUS_SPLUNK_FIELDS = "previousSplunkFields";
 
     public enum ElasticAuthType {ApiKey, Basic, None}
 
